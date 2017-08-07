@@ -1,0 +1,86 @@
+<div class="pubitem">
+	<span class="pubitem_title">A fast conducting, stochastic integrative mode<br>for neocortical neurons <em>in vivo</em></span><br><br>
+	<span class="pubitem_authors">Michael Rudolph, Alain Destexhe</span><br><br>
+	<span class="pubitem_reference">J. Neurosci. 23: 2466-2476, 2003</span>
+</div>
+
+<div class="pubitem_links"><a href="https://drive.google.com/file/d/0BxWNHu-AOXGhMk1TcVBia0FWV2s/edit?usp=sharing" target="_blank"><img src="../img/iconPDF.png" border="0"></a></div>
+
+<div style="clear:both;"></div>
+
+<h3><span>Abstract</span></h3>
+
+<p>During activated states, neocortical neurons receive intense synaptic background activity, which induces large-amplitude
+membrane potential fluctuations and a strong conductance in the membrane. However, little is known about the integrative
+properties of neurons during such high-conductance states. Here we investigated the integrative properties of neocortical
+pyramidal neurons under in vivo conditions simulated by computational models. We show that the presence of high-conductance
+fluctuations induces a stochastic state in which active dendrites are fast-conducting and have a different dynamics of
+initiation and forward-propagation of Na+-dependent spikes. Synaptic efficacy, quantified as the probability that a
+synaptic input specifically evokes a somatic spike, was roughly independent of the dendritic location of the synapse.
+Synaptic inputs evoked precisely timed responses (milliseconds), which also showed a reduced location dependence. This
+scheme was found to apply for a broad range of kinetics and density distributions of voltage-dependent conductances,
+as well as for different dendritic morphologies. Synaptic efficacies were, however, modulable by the balance of excitation
+and inhibition in background activity, for all synapses at once. Thus, models predict that the intense synaptic activity
+<em>in vivo</em> can confer advantageous computational properties to neocortical neurons: they can be set to an integrative
+mode which is stochastic, fast-conducting, and optimized to process synaptic inputs at high temporal resolution
+independently of their position in the dendrites. Some of these predictions can be tested experimentally.</p>
+
+<h3><span>Complementary Information and Material</span></h3>
+
+<h4>1. NEURON demo files</h4> 
+
+<p>NEURON demo files: <a href="https://drive.google.com/file/d/0BxWNHu-AOXGhNkxjLW5vc1E1cXc/edit?usp=sharing" target="_blank" class="tlink">ZIP</a> (19 kByte)</p>
+
+<p>This package contains all the mechanisms necessary to implement the models investigated in this paper, using the NEURON
+simulation environment (NEURON is freely available at 
+<a href="http://www.neuron.yale.edu/" target="_blank" class="tlink">www.neuron.yale.edu</a>). The
+mechanisms included here are the voltage-dependent Na<sup>+</sup>, K<sup>+</sup> and Ca<sup>2+</sup> currents, 
+as well as synaptic (AMPA, GABA<sub>A</sub>) receptor types. Further instructions are provided in a README file,
+as well as comments in each file.</p>
+
+<h4>2. Movies</h4>
+
+<p>The computer animations illustrate the dynamics of spiking in soma and dendrites in a simulated neocortical layer VI 
+pyramidal neuron. The somatodendritic distribution of membrane potential is shown by colors in three cases:</p>
+
+<table> 
+	<tr>
+  	<td width="70px">
+     	<a rel="prettyPhoto[movies]" href="Peer-Reviewed Articles/A14/DendriticSpikes_Spont_Active.mov?width=492&height=480" title="Spontaneous activity in the active state (Vm fluctuations and spontaneous dendritic spikes). 70 ms activity are shown; Vm scale as in the cover picture; correlated background activity (Pearson correlation of 0.1)."><img src="../img/iconMOV.png" border="0" style="margin-bottom:10px;"></a>
+    </td>
+    <td class="tsmall">
+     	Spontaneous activity in the active state (Vm fluctuations and	spontaneous dendritic spikes). 70 ms activity are shown; Vm scale as in the cover picture; correlated background activity (Pearson correlation of 0.1).
+		</td>
+	</tr>
+	<tr>
+		<td>
+	    <a rel="prettyPhoto[movies]" href="Peer-Reviewed Articles/A14/DendriticSpikes_Evoked_Active.mov?width=416&height=480" title="Initiation and propagation of dendritic spike in active state evoked by synaptic stimulation in the distal part of upper dendrite (stimulation amplitude of 4.8 nS, 2 stimulations are shown). A local dendritic spike is initiated, propagates reliable to the soma and initiates there a response. The Vm traces below are: green - dendrite an site of stimulation; red - soma; blue - axon initial segment (70 ms duration)."><img src="../img/iconMOV.png" border="0" style="margin-bottom:10px;"></a>
+	  </td>
+	  <td class="tsmall">
+			Initiation and propagation of dendritic spike in active state	evoked by synaptic stimulation in the distal part of upper dendrite	(stimulation amplitude of 4.8 nS, 2 stimulations are shown). A local dendritic spike is initiated, propagates reliable to the soma and initiates there a response. The	Vm traces below are: green - dendrite an site of stimulation; red - soma; blue - axon initial segment (70 ms duration).
+	 	</td>
+	</tr>
+	<tr>
+		<td>
+	  	<a rel="prettyPhoto[movies]" href="Peer-Reviewed Articles/A14/DendriticSpikes_Evoked_Quiescent.mov?width=406&height=480" title="Initiation and propagation of dendritic spike in the quiescent state. The stimulation amplitude was in this case of 9.6 nS (2 stimulations shown), which inititates a local dendritic spike, which propagates only over limited distance and does not elicit a somatic response."><img src="../img/iconMOV.png" border="0"></a>
+    </td>
+	  <td class="tsmall">
+			Same as preceding case, but without background activity. The stimulation amplitude was in this case of 9.6 nS (2 stimulations shown), which inititates a local dendritic spike, which propagates only over limited distance and does not elicit a somatic response.
+		</td>
+	</tr>
+</table>
+
+<br>
+
+<h4>3. Journal cover page</h4> 
+
+<table> 
+	<tr>
+		<td width="220px"><img src="Peer-Reviewed Articles/A14/Cover.png" border="0"></td>
+		<td>
+			<a href="https://drive.google.com/file/d/0BxWNHu-AOXGhYmZMLTdyZGxfb2M/edit?usp=sharing" target="_blank" class="tlink">PDF</a> (1.1 MByte)
+		</td>
+	</tr>
+</table>
+
+<br>
