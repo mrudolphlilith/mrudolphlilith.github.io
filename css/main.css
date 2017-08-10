@@ -92,5 +92,6 @@ footer #copyright { margin-top:5px;font-size:12px;color:#a0a0a0; }
 
 #contact_table { border-top:2px solid #d0d0d0;border-bottom:2px solid #d0d0d0;margin-left:auto;margin-right:auto;margin-top:40px; }
 .contact_icon { font-size:14px;text-align:right;padding-right:20px;color:#a0a0a0;font-family:'Varela Round',"Trebuchet MS",Palatino,Tahoma,Georgia,"Times New Roman",Times,serif; }
+.contact_separator { border-top:2px solid #d0d0d0; }
 
 .quote { font-style:italic;font-size:18px;text-align:right;padding-bottom:50px;padding-top:30px;color:#a0a0a0; }
