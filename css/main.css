@@ -45,6 +45,15 @@ sub,sup { font-size:12px; }
 .tsmall { font-size:14px;line-height:120%; }
 .ttiny { font-size:12px;line-height:130%; }
 tr,th,td { vertical-align:top; }
+th.l,td.l { padding-right:10px;padding-left:10px;padding-top:4px;border-left:1px solid #303030; }
+th.m,td.m { padding-right:10px;padding-left:10px;padding-top:4px; }
+th.r,td.r { padding-right:10px;padding-left:10px;padding-top:4px;border-right:1px solid #303030; }
+th.s,td.s { border-left:1px solid #303030; }
+th { background-color:#e0e0e0;padding-bottom:4px; }
+td.ra { text-align:right; }
+td.la { text-align:left; }
+tr.hl { border-bottom:1px solid #303030;padding-top:4px; }
+span.p { -ms-word-break:normal;word-break:normal;-webkit-hyphens:auto;-moz-hyphens:auto;-ms-hyphens:auto;-o-hyphens:auto;text-align:justify; }
 
 /* ============================ */
 /* page layout                  */
