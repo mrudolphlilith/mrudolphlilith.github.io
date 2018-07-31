@@ -29,6 +29,7 @@ h2 span { background:#ffffff;padding:0 20px; }
 h3 { width:100%;text-align:left;border-bottom:2px solid #d0d0d0;line-height:0;margin-bottom:40px;font-size:18px;color:#a0a0a0;margin-top:40px;font-family:'Varela Round',"Trebuchet MS",Palatino,Tahoma,Georgia,"Times New Roman",Times,serif; } 
 h3 span { background:#ffffff;padding:0;padding-right:20px; }
 h4 { margin-bottom:20px;font-size:16px;font-weight:bold;padding-bottom:1px;border-bottom:1px solid #505050;display:inline-block; }
+h5 { margin-bottom:20px;font-size:16px;font-weight:bold;font-style:italic; padding-bottom:1px;display:inline-block; }
 em,i { font-style:italic; }
 strong,b { font-weight:bold; }
 tt { font-family:Courier;line-height:120%; }
@@ -52,6 +53,7 @@ th.s,td.s { border-left:1px solid #303030; }
 th { background-color:#e0e0e0;padding-bottom:4px; }
 td.ra { text-align:right; }
 td.la { text-align:left; }
+td.ca { text-align:center; }
 tr.hl { border-bottom:1px solid #303030;padding-top:4px; }
 span.p { -ms-word-break:normal;word-break:normal;-webkit-hyphens:auto;-moz-hyphens:auto;-ms-hyphens:auto;-o-hyphens:auto;text-align:justify; }
 
