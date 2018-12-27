@@ -1,1 +1,1585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="title" content="Michelle Rudolph-Lilith Research" />
+<meta name="author" content="Michelle Rudolph-Lilith" />
+<meta name="description" content="Michelle Rudolph-Lilith Research Page." />
+<meta name="keywords" content="science, research, physics, theoretical physics, mathematical physics, mathematics, number theory, graph theory, neuroscience, theoretical neuroscience, CNRS, UNIC" />
+<link rel="icon" type="image/png" href="../../img/favicon.ico">
 
+<title>Dr. Michelle Rudolph-Lilith - Publications</title>
+
+<!-- ================================================================================================== -->
+<!-- styles                                                                                             -->
+<!-- ================================================================================================== -->
+
+<link rel="stylesheet" href="../../../css/main.css" type="text/css" />
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Varela+Round:normal,400"/>
+
+<!-- ================================================================================================== -->
+<!-- scripts                                                                                            -->
+<!-- ================================================================================================== -->
+
+<!--[if IE]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<!--[if lte IE 7]>
+  <script src="js/IE8.js" type="text/javascript"></script><![endif]-->
+<!--[if lt IE 7]>
+  <link rel="stylesheet" type="text/css" media="all" href="css/ie6.css"/><![endif]-->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+</script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/javascript" src="../../../js/Hyphenator.js" language="JavaScript" ></script>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+
+</head>
+
+<body>
+
+<!-- ================================================================================================== -->
+<!-- content                                                                                            -->
+<!-- ================================================================================================== -->
+
+<div class="wrapper">
+
+<!-- header =========================================================================================== -->
+
+<header>
+
+  <div id="logo"><img src="../../../img/zeta.png" border="0"></div>
+  <div id="name">Dr. Michelle Rudolph-Lilith</div>
+  <div id="fields">THEORETICAL PHYSICS &bull; MATHEMATICS &bull; THEORETICAL NEUROSCIENCE</div>
+
+</header>
+
+<!-- nav ============================================================================================== -->
+
+<nav>
+
+  <ul id="navlist">
+    <li><a href="../../../index.html">HOME</a></li>
+    <li><a href="../../../about.html">ABOUT</a></li>
+    <li><a href="../../../publications.html" class="active">PUBLICATIONS</a></li>
+    <li><a href="../../../contact.html">CONTACT</a></li>
+ </ul>
+
+</nav>
+
+<!-- main ============================================================================================= -->
+
+<main>
+
+<div class="pubitem">
+	<span class="pubitem_title"><em>ChessY</em>: A Mathematica toolbox for the generation, visualization and analysis of positional chess graphs</span><br><br>
+	<span class="pubitem_authors">Michelle Rudolph-Lilith</span><br><br>
+	<span class="pubitem_reference">SoftwareX, 2019, in press</span><br><br>
+<!--<span class="pubitem_reference"><a href="https://doi.org/10.1016/j.heliyon.2018.e00691" target="_blank" class="tlink">https://doi.org/10.1016/j.heliyon.2018.e00691</a></span>-->
+</div>
+
+<!--<div class="pubitem_links"><a href="https://drive.google.com/open?id=1-hxysIRF7GnQLWzGz21AC0cBDf0LdlEh" target="_blank"><img src="../../../img/iconPDF.png" border="0"></a></div>-->
+
+<div style="clear:both;"></div>
+
+<h3><span>Abstract</span></h3>
+
+<p>The game of chess is undoubtedly one of the most popular two-player strategy board games in history, enjoyed by casual players and competing celebrated professionals alike, and serves as prototype research subject in a vast variety of fields. Although a plethora of parsers on a large number of different platforms is readily available for processing records of chess games provided in online databases, <em>Mathematica</em> remains, somewhat surprisingly, exempt. <em>ChessY</em> attempts to fill this gap, by providing a simple set of tools for handling Portable Game Notation (PGN) chess records and their translation into positional chess graphs, thus opening the door for a systematic analysis of chess games within the powerful confines of graph theory using <em>Mathematica</em>.</p>
+
+<h3><span>Supplementary Information and Material</span></h3>
+
+<p>The <em>ChessY</em> toolbox (v1.0) for <em>Mathematica</em> (v10.0 or above) can be downloaded <a href="https://github.com/mrudolphlilith/ChessY" class="tlink" target="_blank">here</a>. Files include:</p>
+
+<p><table style="margin-left:30px;">
+  <tr>
+    <td width=150px><tt>ChessY.m</tt></td>
+    <td><em>ChessY</em> toolbox (v1.0)</td>
+  </tr>
+  <tr>
+    <td width=150px><tt>README.txt</tt></td>
+    <td><em>ChessY</em> manual</td>
+  </tr>
+  <tr>
+    <td width=150px><tt>example*.pgn</tt></td>
+    <td>example PGN records used in the manual</td>
+  </tr>
+  <tr>
+    <td width=150px><tt>pieces/*</tt></td>
+    <td>directory with vector graphics of chess pieces</td>
+  </tr>
+</table></p>
+
+<p>Please note that <em>ChessY</em> is in active development. Feel free to <a href="../../../contact.html" class="tlink">contact me</a> for general feedback and comments, bug fixes, problems as well as feature requests and suggestions.</p>
+
+<h3><span>Manual</span></h3>
+
+<ul style="margin-left:30px;margin-right:20px;">
+  <li style="margin-bottom:10px;"><a href="#M1" class="tlink">Data Objects, Constants and Auxiliary Functions</a>
+    <ul style="margin-left:20px;margin-right:20px;">
+      <li><a href="#M1.1" class="tlink">Position Data Object</a></li>
+      <li><a href="#M1.2" class="tlink">Nodes Data Object</a></li>
+      <li><a href="#M1.3" class="tlink">Edges Data Object</a></li>
+      <li><a href="#M1.4" class="tlink">File/Rank-NodeID Mapping</a></li>
+      <li><a href="#M1.5" class="tlink">Moves</a></li>
+      <li><a href="#M1.6" class="tlink">Visualization</a></li>
+    </ul>
+  </li>
+  <li style="margin-bottom:10px;"><a href="#M2" class="tlink">Chess Position Generation</a>
+    <ul style="margin-left:20px;margin-right:20px;">
+      <li><a href="#M2.1" class="tlink">Manual Generation</a></li>
+      <li><a href="#M2.2" class="tlink">PGN Parser</a></li>
+    </ul>
+  </li>
+  <li style="margin-bottom:10px;"><a href="#M3" class="tlink">Chess Graph Generation</a></li>
+  <li style="margin-bottom:10px;"><a href="#M4" class="tlink">Visualization</a></li>
+  <li style="margin-bottom:10px;"><a href="#M5" class="tlink">Chess Graph Analysis</a></li>
+  <li style="margin-bottom:10px;"><a href="#M6" class="tlink">Examples</a>
+    <ul style="margin-left:20px;margin-right:20px;">
+      <li><a href="#M6.1" class="tlink">Analysis of a Chess Game</a></li>
+    </ul>
+  </li>
+</ul>
+
+<br>
+
+<h4 id="M1">Data Objects, Constants and Auxiliary Functions</h4>
+
+<p><em>ChessY</em> is build around three principal types of data objects: position, nodes and edges. While the position object contains a list of pieces and their location on the chessboard, thus uniquely encodes a given chess position, nodes and edges are lists which characterize the chess graph associated with a given position.</p>
+
+<h5 id="M1.1" class="u">Position Data Object</h5>
+
+<p>The position data object is a <em>Mathematica</em> list containing two elements:</p>
+
+<pre><code>position = { <em>SUPPLEMENTARY_INFO</em> , <em>LIST_OF_OCCUPIED_SQUARES</em> }</code></pre>
+
+<p>Here, <code><em>SUPPLEMENTARY_INFO</em></code> is a key-value association list containing supplementary information which characterize a given chess position. This association list has the form</p>
+
+<pre><code><em>SUPPLEMENTARY_INFO</em> = <| "enpassant"-><em>VALUE</em> ,
+                        "castling"-><em>VALUE</em> ,
+                        "check"-><em>VALUE</em> ,
+                        "checkmate"-><em>VALUE</em> |></code></pre>
+
+<p>where:
+<ul style="margin-top:-14px;">
+  <li>
+    <code>"enpassant"</code>
+    <div class="i">indicates the node ID (see below) of the target node of a possible <em>en passant</em> move<br>
+    default value: <code>0</code></div></li>
+  <li>
+    <code>"castling"</code>
+    <div class="i">contains information about possible castling moves in form of a list<br>
+    <code>{ { <em>QSwhite</em> , <em>KSwhite</em> } , { <em>QSblack</em> , <em>KSblack</em> } }</code><br>
+    with:
+    <ul style="list-style-type:none;">
+      <li><code><em>QSwhite</em> = True/False</code> for white queenside castling</li>
+      <li><code><em>KSwhite</em> = True/False</code> for white kingside castling</li>
+      <li><code><em>QSblack</em> = True/False</code> for black queenside castling</li>
+      <li><code><em>KSblack</em> = True/False</code> for black kingside castling</li>
+    </ul>
+    default value: <code>{{True,True},{True,True}}</code></div></li>
+  <li>
+    <code>"check"</code>
+    <div class="i">indicates whether a check was issued in the given position using <code>True/False</code><br>
+    default value: <code>False</code></div></li>
+  <li>
+    <code>"checkmate"</code>
+    <div class="i">indicates whether a checkmate was issued in the given position using <code>True/False</code><br>
+      default value: <code>False</code></div></li>
+</ul></p>
+
+<p>The <code><em>LIST_OF_OCCUPIED_SQUARES</em></code> entry is a list of elements of type</p>
+
+<pre><code><em>LIST_OF_OCCUPIED_SQUARES</em> = { { <em>nodeID</em> , <em>pieceID</em> } , { <em>nodeID</em> , <em>pieceID</em> } , ... }</code></pre>
+
+<p>containing the set of all occupied squares or nodes. Here, <code><em>nodeID</em></code> is a unique identifier of each chessboard square, ranging from 1 to 64, starting in the lower left-hand corner with the $a1$ square and ending in the upper right-hand corner ($h8$ square). That is,</p>
+
+<p><center>
+<table>
+  <tr>
+    <td><br>
+      <table style="border:1px solid #303030;">
+        <thead>
+          <tr style="border-bottom:1px solid #303030;">
+            <th class="l ca">file/rank</th>
+            <th class="s"></th><th class="r ca">nodeID</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="l ca">$a1$</td><td class="s"></td><td class="r ca">1</td></tr>
+          <tr><td class="l ca">$b1$</td><td class="s"></td><td class="r ca">2</td></tr>
+          <tr><td class="l ca">...</td><td class="s"></td><td class="r ca">...</td></tr>
+          <tr><td class="l ca">$h1$</td><td class="s"></td><td class="r ca">8</td></tr>
+          <tr><td class="l ca">$a2$</td><td class="s"></td><td class="r ca">9</td></tr>
+          <tr><td class="l ca">...</td><td class="s"></td><td class="r ca">...</td></tr>
+          <tr><td class="l ca">$g8$</td><td class="s"></td><td class="r ca">63</td></tr>
+          <tr><td class="l ca">$h8$</td><td class="s"></td><td class="r ca">64</td></tr>
+        </tbody>
+      </table>
+    </td>
+    <td width=40></td>
+    <td valign="top">
+      <img src="mFig1.png" width="275">
+    </td>
+    <td width=40></td>
+    <td class="tsmall">
+      <br><span class="p" style="line-height:140%"><b>Table 1</b><br>file/rank-node ID mapping<br>utilized in <em>ChessY</em><span>
+    </td>
+  </tr>
+</table>
+</center></p>
+
+<p>For mapping the file/rank chessboard square identifier to the <code><em>nodeID</em></code>, see <a href="#M1.4" class="tlink">File/Rank-NodeID Mapping</a>.</p>
+
+<p>The <code><em>pieceID</em></code> is a unique identifier for the chess piece type:</p>
+
+<p><center>
+  <table>
+    <tr>
+      <td>
+        <table style="border:1px solid #303030;">
+          <thead>
+            <tr style="border-bottom:1px solid #303030;">
+              <th class="l ca">chess piece</th>
+              <th class="s"></th><th class="r ca">pieceID</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="l ca">white king</td><td class="s"></td><td class="r ca">-2</td></tr>
+            <tr><td class="l ca">white queen</td><td class="s"></td><td class="r ca">-3</td></tr>
+            <tr><td class="l ca">white rook</td><td class="s"></td><td class="r ca">-4</td></tr>
+            <tr><td class="l ca">white bishop</td><td class="s"></td><td class="r ca">-5</td></tr>
+            <tr><td class="l ca">white knight</td><td class="s"></td><td class="r ca">-6</td></tr>
+            <tr><td class="l ca">white pawn</td><td class="s"></td><td class="r ca">-7</td></tr>
+            <tr><td class="l ca">black king</td><td class="s"></td><td class="r ca">2</td></tr>
+            <tr><td class="l ca">black queen</td><td class="s"></td><td class="r ca">3</td></tr>
+            <tr><td class="l ca">black rook</td><td class="s"></td><td class="r ca">4</td></tr>
+            <tr><td class="l ca">black bishop</td><td class="s"></td><td class="r ca">5</td></tr>
+            <tr><td class="l ca">black knight</td><td class="s"></td><td class="r ca">6</td></tr>
+            <tr><td class="l ca">black pawn</td><td class="s"></td><td class="r ca">7</td></tr>
+            <tr><td class="l ca">none</td><td class="s"></td><td class="r ca">0</td></tr>
+          </tbody>
+        </table>
+      </td>
+      <td width=20></td>
+      <td class="tsmall">
+        <span class="p" style="line-height:140%"><b>Table 2</b><br>Chess piece identification utilized in <em>ChessY</em><span>
+      </td>
+    </tr>
+  </table>
+</center></p>
+
+<p><strong>EXAMPLES:</strong></p>
+
+<p>empty chess board:</p>
+
+<pre><code>positionEmpty =
+{
+  <| "enpassant"->0,
+     "castling"->{{True,True},{True,True}},
+     "check"->False,
+     "checkmate"->False |>,
+  {}
+};</code></pre>
+
+<p>initial chess position:</p>
+
+<pre><code>positionStart =
+{
+  <| "enpassant"->0,
+     "castling"->{{True,True},{True,True}},
+     "check"->False,
+     "checkmate"->False |>,
+  {
+     {1,wR},{2,wN},{3,wB},{4,wQ},{5,wK},{6,wB},{7,wN},{8,wR},
+     {9,wP},{10,wP},{11,wP},{12,wP},{13,wP},{14,wP},{15,wP},{16,wP},
+     {49,bP},{50,bP},{51,bP},{52,bP},{53,bP},{54,bP},{55,bP},{56,bP},
+     {57,bR},{58,bN},{59,bB},{60,bQ},{61,bK},{62,bB},{63,bN},{64,bR}
+  }
+};</code></pre>
+
+<p>position of move 11 in match Spassky-Fischer during the 8th World Championship on Jul 16, 1972:</p>
+
+<pre><code>position23SpasskyFischer1972 =
+{
+  <| "enpassant"->0,
+     "castling"->{{False,False},{False,False}},
+     "check"->False,
+     "checkmate"->False |>,
+  {
+    {1,wR},{3,wB},{6,wR},{7,wK},{9,wP},{10,wP},{11,wQ},{12,wN},
+    {13,wB},{14,wP},{15,wP},{16,wP},{19,wN},{29,wP},{35,bP},{36,wP},
+    {40,bN},{44,bP},{47,bP},{49,bP},{50,bP},{52,bN},{54,bP},{55,bB},
+    {56,bP},{57,bR},{59,bB},{60,bQ},{61,bR},{63,bK}
+  }
+};</code></pre>
+
+<br>
+
+<h5 id="M1.2" class="u">Nodes Data Object</h5>
+
+<p>The nodes data object</p>
+
+<pre><code>nodes = { <em>NODE_STATE</em> , <em>NODE_STATE</em> , ... }</code></pre>
+
+<p>is a 1-dimensional list (vector) of length 64 with element $i$ containing the node state of node $i$. The <code><em>NODE_STATE</em></code> value characterizes each node, and can take various values depending on an optional argument <code>State</code> which can be chosen in many functions of <em>ChessY</em> (see below). Specifically,</p>
+
+<p><ul style="margin-top:-14px;">
+  <li>
+    <code>State->"Piece"</code>
+    <div class="i">the node state indicates the type of piece occupying the node, according to Table 2</div></li>
+  <li>
+    <code>State->"Color"</code>
+    <div class="i">the node state indicates the color of the piece occupying the node:<br><br>
+    <center>
+      <table>
+        <tr>
+          <td>
+            <table style="border:1px solid #303030;">
+              <thead>
+                <tr style="border-bottom:1px solid #303030;">
+                  <th class="l ca">color</th>
+                  <th class="s"></th><th colspan="4" class="r ca">node state</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td class="l ca">white</td><td class="s"></td><td colspan="3" class="r ca">-1</td></tr>
+                <tr><td class="l ca">black</td><td class="s"></td><td colspan="3" class="r ca">1</td></tr>
+                <tr><td class="l ca">none</td><td class="s"></td><td colspan="3" class="r ca">0</td></tr>
+              </tbody>
+            </table>
+          </td>
+          <td width=20></td>
+          <td class="tsmall">
+            <span class="p" style="line-height:140%"><b>Table 3:</b> Node states distinguising<br>the color of the chess piece<span>
+          </td>
+        </tr>
+      </table>
+    </center><br></div></li>
+  <li>
+    <code>State->"Simple"</code>
+    <div class="i">the node state indicates whether a node is occupied or not:<br><br>
+    <center>
+      <table>
+        <tr>
+          <td>
+            <table style="border:1px solid #303030;">
+              <thead>
+                <tr style="border-bottom:1px solid #303030;">
+                  <th class="l ca">square occupied</th>
+                  <th class="s"></th><th colspan="3" class="r ca">node state</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td class="l ca">yes</td><td class="s"></td><td colspan="3" class="r ca">1</td></tr>
+                <tr><td class="l ca">no</td><td class="s"></td><td colspan="3" class="r ca">0</td></tr>
+              </tbody>
+            </table>
+          </td>
+          <td width=20></td>
+          <td class="tsmall">
+            <span class="p" style="line-height:140%"><b>Table 4:</b> Node states distinguising<br>the occupation state of a square<span>
+          </td>
+        </tr>
+      </table>
+    </center></div></li>
+</ul></p>
+
+<h5 id="M1.3" class="u">Edges Data Object</h5>
+
+<p>The edges data object</p>
+
+<pre><code>edges = { <em>EDGE</em> , <em>EDGE</em> , ... }</code></pre>
+
+<p>is a 2-dimensional list (matrix), specifically a variable-length list with elements of the form</p>
+
+<pre><code><em>EDGE</em> = { <em>SOURCE_NODE_ID</em> , <em>TARGET_NODE_ID</em> , <em>EDGE_STATE</em> }</code></pre>
+
+<p>where the edge <code><em>EDGE_STATE</em></code> is equal to the color state of the source node (Table 3).</p>
+
+<h5 id="M1.4" class="u">File/Rank-NodeID Mapping</h5>
+
+<p>Each square on the chessboard is uniquely labelled in terms of file (a,b,...,h) and rank (1,2,...,8). In order to simplify the mapping between file/rank and node ID (Table 1), <em>ChessY</em> associates each file with numbers: $a \rightarrow 1$, $b \rightarrow 2$, ..., $h \rightarrow 8$. For converting between file, rank and node IDs, <em>ChessY</em> provides three functions:</p>
+
+<p>node ID $\rightarrow$ file:</p>
+
+<pre><code>file[ <em>NODE_ID</em> ]</code></pre>
+
+<p>node ID $\rightarrow$ rank:</p>
+
+<pre><code>rank[ <em>NODE_ID</em> ]</code></pre>
+
+<p>file/rank $\rightarrow$ node ID:</p>
+
+<pre><code>node[ <em>FILE</em> , <em>RANK</em> ]</code></pre>
+
+<br>
+
+<h5 id="M1.5" class="u">Moves</h5>
+
+<p>In order to generate positional chess graphs from given chess positions, <em>Chessy</em> employs 2-dimensional data arrays which effectively encode all possible moves for each type of chess piece:</p>
+
+<p><ul style="margin-top:-14px;">
+  <li>
+    <code>mN</code>, <code>mNE</code>, <code>mE</code>, <code>mSE</code>, <code>mS</code>, <code>mSW</code>, <code>mW</code>, <code>mNW</code>
+    <div class="i">lists providing the nodes in each of the cardinal and intercardinal directions (N,NE,E,SE,S,SW,W,NW), indexed by the node of origin; these lists are used to generate edges for queen, rook and bishop</div></li>
+  <li>
+    <code>mKing</code>
+    <div class="i">standard moves of the white/black king</div></li>
+  <li>
+    <code>mKnight</code>
+    <div class="i">standard moves of the white/black knight</div></li>
+  <li>
+    <code>mwPawn</code>, <code>mbPawn</code>
+    <div class="i">standard moves of the white/black pawn</div></li>
+  <li>
+    <code>mwPawnR</code>, <code>mbPawnR</code>
+    <div class="i">additional rank 2/7 move of the white/black pawn</div></li>
+  <li>
+    <code>mwPawnX</code>, <code>mbPawnX</code>
+    <div class="i">capture moves of the white/black pawn</div></li>
+  <li>
+    <code>mwPawnEP</code>, <code>mbPawnEP</code>
+    <div class="i"><em>en passant</em> moves of the white/black pawn</div></li>
+  <li>
+    <code>enPassantXw</code>, <code>enPassantXb</code>
+    <div class="i"><em>en passant</em> target nodes, indexed by the target node of the opposing pawn subject to potential en passant capture; the lists contain the allowed values for the en passant variable used during the evaluation of game positions</div></li>
+</ul></p>
+
+<h5 id="M1.6" class="u">Visualization</h5>
+
+<p>Additional graphical objects are required to visualize a given chess position in the classical style. These objects are imported as EPS files residing in the subdirectory <code>pieces/</code>.</p>
+
+<h4 id="M2">Chess Position Generation</h4>
+
+<p><em>ChessY</em> provides two ways to generate chess positions, a manual one and by parsing PGN chess records.</p>
+
+<h5 id="M2.1" class="u">Manual Generation</h5>
+
+<p><em>ChessY</em> has two functions for populating a chess board manually with chess pieces, thus creating valid chess positions. Using the function</p>
+
+<pre><code>getPositionFromPieceFileRank[ { <em>p1</em> , <em>p2</em> , ... } ]</code></pre>
+
+<p>pieces <code><em>p1</em></code>, <code><em>p2</em></code>, ... can be placed on the board by specifying the piece color and type, as well as the file and rank of the target square. Entries in the argument list must be of the form</p>
+
+<pre><code><em>p*</em> = <em>COLOR/</em><em>TYPE/</em><em>FILE/</em><em>RANK</em></code></pre>
+
+<p>The function takes optional arguments:
+<ul style="margin-top:-14px;">
+  <li>
+    <code>EnPassant</code>
+    <div class="i">File/Rank of the target node of a possible <em>en passant</em> move<br>
+    default value: <code>enPassant->0</code></div></li>
+  <li>
+    <code>Castling</code>
+    <div class="i">possible castling moves in the given position in form of <code>{{QSwhite,KSwhite},{QSblack,KSblack}}</code> (see <a href="#M1.1" class="tlink">Position Data Object</a>)<br>
+    default value: <code>Castling->{{True,True},{True,True}}</code></div></li>
+  <li>
+    <code>Check</code>
+    <div class="i">check issued in generated position (<code>True/False</code>)<br>
+    default value: <code>Check->False</code></div></li>
+  <li>
+    <code>Checkmate</code>
+    <div class="i">checkmate issued in generated position (<code>True/False</code>)<br>
+    default value: <code>checkmate->False</code></div></li>
+</ul></p>
+
+<p><strong>EXAMPLES:</strong></p>
+
+<p>identification of white queen on square $a1$:</p>
+
+<pre><code>wQa1</code></pre>
+
+<p>chess position with a white queen on $c5$ and a black king on $e8$:</p>
+
+<pre><code>position = getPositionFromPieceFileRank[ {wQc5,bKe8} ];</code></pre>
+
+<p>ply 29 in Pietzcker Christmas Tournament (1928) between Gundersen and Faul:</p>
+
+<pre><code>position = getPositionFromPieceFileRank[
+             {
+               wRa1,wBc1,wKe1,wRh1,wPa2,wPb2,wPf2,wPg2,wNc3,
+               wQg4,wPe5,wPh5,wNe6,bRa8,bBc8,bQd8,bRf8,bPa7,
+               bPb7,bNe7,bKh6,bPd5,bPf5,bPg5,bBb4,bNd4
+             },
+             EnPassant->g6,
+             Castling->{{True,True},{False,False}},
+             Check->False,
+             Checkmate->False
+           ];</code></pre>
+
+<p>The function</p>
+
+<pre><code>getPositionFromPieceNode[ { <em>p1</em> , <em>p2</em> , ... } ]</code></pre>
+
+<p>generates a position by populating a chess graph's nodes with pieces <code><em>p1</em></code>, <code><em>p2</em></code> identified by</p>
+
+<pre><code><em>p*</em> = <em>COLOR/</em><em>TYPE/</em><em>NODE_ID</em></code></pre>
+
+<p>where <code><em>NODE_ID</em></code> ranges from 1 to 64 (see <a href="#M1.1" class="tlink">Position Data Object</a>). Optional arguments are the same as for <code>getPositionFromPieceFileRank[]</code>, except that the value of the <code>EnPassant</code> option is a node ID.</p>
+
+<p><strong>EXAMPLES:</strong></p>
+
+<p>identification of white queen on square $a1$:</p>
+
+<pre><code>wQ1</code></pre>
+
+<p>chess position with a white queen on node 35 ($c5$) and a black king on node 61 ($e8$):</p>
+
+<pre><code>position = getPositionFromPieceNode[ {wQ35,bK61} ];</code></pre>
+
+<p>ply 29 in Pietzcker Christmas Tournament (1928) between Gundersen and Faul:</p>
+
+<pre><code>position = getPositionFromPieceNode[
+             {
+               wR1,wB3,wK5,wR8,wP9,wP10,wP14,wP15,wN19,wQ31,
+               wP37,wP40,wN45,bR57,bB59,bQ60,bR62,bP49,bP50,
+               bN53,bK48,bP36,bP38,bP39,bB26,bN28
+             },
+             EnPassant->g6,
+             Castling->{{True,True},{False,False}},
+             Check->False,
+             Checkmate->False
+           ];</code></pre>
+
+<br>
+
+<h5 id="M2.2" class="u">PGN Parser</h5>
+
+<p>The second way to generate chess positions is to utilize <em>ChessY</em>'s PGN parser, which processes PGN-formatted chess game records. Two functions are available, with the first being (internally) used to get specific information of the move from a single PGN-formatted string, and the second for parsing a whole PGN game record. Only the latter returns a list of chess positions.</p>
+
+<p>The function</p>
+
+<pre><code>parsePGNMove[ <em>MOVE</em> ]</code></pre>
+
+<p>parses a single PGN compliant chessmove string and returns a list with details  of the move. Please note that this is a very baseline parser for PNG-formatted strings which might not cover deviations from the SAN format recommended by FISA as well as special cases. This function is merely employed for internal purposes, so use with care!</p>
+
+<p>The function returns a list with 11 elements</p>
+
+<pre><code>{
+  <em>PIECE</em> , <em>FILE</em> , <em>RANK</em> , <em>CAPTURE</em> , <em>DISAMBIGUATION</em> , <em>CASTLING</em> ,
+  <em>ENPASSANT</em> , <em>PROMOTION</em> , <em>CHECK</em> , <em>CHECKMATE</em> , <em>RESULT</em>
+}</code></pre>
+
+<p>where:
+<ul style="margin-top:-14px;">
+  <li>
+    <code><em>PIECE</em></code>, <code><em>FILE</em></code>, <code><em>RANK</em></code>
+    <div class="i">strings identifying the moved piece as well as strings containing the target file and rank of the moved piece</div></li>
+  <li>
+    <code><em>CAPTURE</em></code>
+    <div class="i"><code>True/False</code> depending on whether the move was a capture move</div></li>
+  <li>
+    <code><em>DISAMBIGUATION</em></code>
+    <div class="i">string with the departure file or rank provided as disambiguation in the PGN record</div></li>
+  <li>
+    <code><em>CASTLING</em></code>
+    <div class="i">string with castling information (see <a href="#M1.1" class="tlink">Position Data Object</a>)</div></li>
+  <li>
+    <code><em>ENPASSANT</em></code>
+    <div class="i"><code>True/False</code> depending on whether move was an <em>en passant</em> capture move</div></li>
+  <li>
+    <code><em>PROMOTION</em></code>
+    <div class="i">string with the identifier of the new promoted piece in the case the move was a promotion</div></li>
+  <li>
+    <code><em>CHECK</em></code>
+    <div class="i"><code>True/False</code> if move leads to check</div></li>
+  <li>
+    <code><em>CHECKMATE</em></code>
+    <div class="i"><code>True/False</code> if move leads to checkmate</div></li>
+  <li>
+    <code><em>RESULT</em></code>
+    <div class="i">string containing PGN marker for game result</div></li>
+<ul></p>
+
+<p>The function</p>
+
+<pre><code>getPositionsFromGamePGN[ <em>MOVES</em> ]</code></pre>
+
+<p>provides the actual PGN game record parser of <em>ChessY</em>. It takes a list of PGN-formatted move strings as argument, and returns a list of all successive positions of the chess game. <em>ChessY</em> provides three example records, each containing the full PGN-compliant record of a single game.</p>
+
+<p>The parser can be used in the following way:</p>
+
+<pre><code><span class="c">(* load the ChessY toolbox *)</span>
+Get["ChessY.m"];
+
+<span class="c">(* open PGN record file *)</span>
+pgnfile = OpenRead["example1.pgn"];
+eof = False;
+
+<span class="c">(* setup list for handling data *)</span>
+game = Array[0,11];
+
+{
+  cEvent,cSite,cDate,cRound,cWhite,cBlack,cResult,cECO,cWhiteElo,cBlackElo,cMoves
+} = Table[i,{i,1,11}];
+
+<span class="c">(* parse PGN record *)</span>
+While[ !eof ,
+  If[
+    (record = Read[pgnfile,Record,RecordSeparators->{"\n"}])==EndOfFile ,
+    eof = True
+  ];
+
+  If[
+    (!eof) && (StringTake[record,7]=="[Event ") ,
+    game[[cEvent]] = StringSplit[record,"\""][[2]]
+  ];
+
+  If[
+    (!eof) && (StringTake[record,6]=="[Site ") ,
+    game[[cSite]] = StringSplit[record,"\""][[2]]
+  ];
+
+  If[
+    (!eof) && (StringTake[record,6]=="[Date ") ,
+    game[[cDate]] = StringSplit[record,"\""][[2]]
+  ];
+
+  If[
+    (!eof) && (StringTake[record,7]=="[Round ") ,
+    game[[cRound]] = StringSplit[record,"\""][[2]]
+  ];
+
+  If[
+    (!eof) && (StringTake[record,7]=="[White ") ,
+    game[[cWhite]] = StringSplit[record,"\""][[2]]
+  ];
+
+  If[
+    (!eof) && (StringTake[record,7]=="[Black ") ,
+    game[[cBlack]] = StringSplit[record,"\""][[2]]
+  ];
+
+  If[
+    (!eof) && (StringTake[record,8]=="[Result ") ,
+    game[[cResult]] = StringSplit[record,"\""][[2]]
+  ];
+
+  If[
+    (!eof) && (StringTake[record,5]=="[ECO ") ,
+    game[[cECO]] = StringSplit[record,"\""][[2]]
+  ];
+
+  If[
+    (!eof) && (StringTake[record,10]=="[WhiteElo ") ,
+    game[[cWhiteElo]] = StringSplit[record,"\""][[2]]
+  ];
+
+  If[
+    (!eof) && (StringTake[record,10]=="[BlackElo ") ,
+    game[[cBlackElo]] = StringSplit[record,"\""][[2]]
+  ];
+
+  If[
+    (!eof) && (StringTake[record,2]=="1.") ,
+    game[[cMoves]] = StringTrim[
+      StringSplit[record,RegularExpression["[0-9]+[\\.]"]]
+    ]
+  ];
+];
+
+<span class="c">(* close PGN record file *)</span>
+Close[pgnfile];
+
+<span class="c">(* get list of game positions from moves *)</span>
+positions = getPositionsFromGamePGN[game[[cMoves]]];
+
+<span class="c">(* print result *)</span>
+Print[
+  Panel[
+    Text[
+      Grid[
+        {
+          {
+            Style["Event \t",Black,Bold,FontFamily->"Arial",FontSize->12 ],
+            Style[game[[cEvent]],Black,FontFamily->"Arial",FontSize->12 ]
+          },
+          {
+            Style["Site \t",Black,Bold,FontFamily->"Arial",FontSize->12 ],
+            Style[game[[cSite]],Black,FontFamily->"Arial",FontSize->12 ]
+          },
+          {
+            Style["Date \t",Black,Bold,FontFamily->"Arial",FontSize->12 ],
+            Style[game[[cDate]],Black,FontFamily->"Arial",FontSize->12 ]
+          },
+          {
+            Style["Round \t",Black,Bold,FontFamily->"Arial",FontSize->12 ],
+            Style[game[[cRound]],Black,FontFamily->"Arial",FontSize->12 ]
+          },
+          {
+            Style["White \t",Black,Bold,FontFamily->"Arial",FontSize->12 ],
+            Style[game[[cWhite]],Black,FontFamily->"Arial",FontSize->12 ]
+          },
+          {
+            Style["Black \t",Black,Bold,FontFamily->"Arial",FontSize->12 ],
+            Style[game[[cBlack]],Black,FontFamily->"Arial",FontSize->12 ]
+          },
+          {
+            Style["Result \t",Black,Bold,FontFamily->"Arial",FontSize->12 ],
+            Style[game[[cResult]],Black,FontFamily->"Arial",FontSize->12 ]
+          }
+        }
+      ]
+    ] , FrameMargins->{{30, 30}, {10, 10}}
+  ]
+];
+
+Print[game[[cMoves]]];
+Print[positions];</code></pre>
+
+<p>The output will be a formatted box with information about the game, a list of moves, and a list of positions:
+<center><img src="mFig2.png" width="100%"></center></p>
+
+<h4 id="M3">Chess Graph Generation</h4>
+
+<p>A positional chess graph is fully defined by its nodes and edges. In order to obtain both from chess positions obtained with functions presented in <a href="#M2" class="tlink">Chess Position Generation</a>, <em>ChessY</em> provides several functions.</p>
+
+<p>The function</p>
+
+<pre><code>getNodesFromPosition[ <em>p</em> ]</code></pre>
+
+<p>returns a 1-dimensional list of length 64 with all node states in a given chess position <code><em>p</em></code>. An optional argument can be used to specify the type of state:</p>
+
+<p><ul style="margin-top:-14px;">
+  <li>
+    <code>State->"Piece"</code>
+    <div class="i">state indicating individual type of chess pieces (see Table 2)</div></li>
+  <li>
+    <code>State->"Color"</code> (default)
+    <div class="i">state indicating color of chess pieces (see Table 3)</div></li>
+  <li>
+    <code>State->"Simple"</code>
+    <div class="i">state indicating whether node is occupied or not (see Table 4)</div></li>
+</ul></p>
+
+<p>The returned list is of the form</p>
+
+<pre><code>{ <em>NODE_1_STATE</em> , <em>NODE_2_STATE</em> , ... }</code></pre>
+
+<p><strong>EXAMPLE:</strong></p>
+
+<p>The code</p>
+
+<pre><code>Get["ChessY.m"];
+position = positionStart;
+nodes = getNodesFromPosition[position,State->"Colors"];
+Print[nodes];</code></pre>
+
+<p>generates the output
+<center><img src="mFig3.png" width="100%"></center></p>
+
+<p>The function</p>
+
+<pre><code>getEdgesFromPosition[ <em>p</em> ]</code></pre>
+
+<p>returns a 2-dimensional list of all weighted edges in a given chess position <code><em>p</em></code>. Two optional arguments can be specified:
+<ul style="margin-top:-14px;">
+  <li>
+    <code>State</code>
+    <div class="i">specifies the edge state/weight
+    <ul style="list-style-type:none;">
+      <li><code>State->"Color"</code> - state indicating color of chess pieces (default)</li>
+      <li><code>State->"Simple"</code> - state indicating whether node is occupied or not</li>
+    </ul></div></li>
+  <li>
+    <code>SameColorTargets</code>
+    <div class="i"><code>True/False</code> indicating whether edges are included for which both source and target nodes have same color. Please note that this argument must be set to <code>False</code> for generating valid chess graphs!<br>
+    default value: <code>sameColorTargets->False</code></div></li>
+</ul></p>
+
+<p>The returned list is of the form</p>
+
+<pre><code>{ { <em>SOURCE</em> , <em>TARGET</em> , <em>WEIGHT</em> } , { <em>SOURCE</em> , <em>TARGET</em> , <em>WEIGHT</em> } , ... }</code></pre>
+
+<p>holding the set of all edges indicated by source node, target node and edge weight (state) information.</p>
+
+<p><strong>EXAMPLE:</strong></p>
+
+<p>The code</p>
+
+<pre><code>Get["ChessY.m"];
+position = positionStart;
+edges = getNodesFromPosition[position,State->"Simple"];
+Print[edges];
+</code></pre>
+
+<p>generates the output
+<center><img src="mFig4.png" width="100%"></center></p>
+
+<p>Finally,</p>
+
+<pre><code>getWhiteEdgesFromPosition[ <em>p</em> ]
+getBlackEdgesFromPosition[ <em>p</em> ]</code></pre>
+
+<p>are two internal functions used by <code>getEdgesFromPosition[]</code>, and return 2-dimensional lists of all potential edges originating from white/black pieces (except edges from castling moves of the white/black king/rook) in a given chess position <code><em>p</em></code>.</p>
+
+<h4 id="M4">Visualization</h4>
+
+<p><em>ChessY</em> provides various functions for visualizing chess positions, positional chess graphs, and whole chess games. The function</p>
+
+<pre><code>showChessPosition[ <em>p</em> ]</code></pre>
+
+<p>returns an array plot displaying a chess position <code><em>p</em></code> in the a classical (pieces on chessboard) style.</p>
+
+<p><strong>EXAMPLE:</strong></p>
+
+<p>The code</p>
+
+<pre><code>Get["ChessY.m"];
+position = positionStart;
+Print[showChessPosition[position]];
+</code></pre>
+
+<p>generates and visualizes the initial chess position:
+<center><img src="mFig5.png" height="320px"></center></p>
+
+<p>The function</p>
+
+<pre><code>showPositionalChessGraph[ <em>NODES</em> , <em>EDGES</em> ]</code></pre>
+
+<p>returns chessgraph with given lists of <code><em>NODES</em></code> and <code><em>EDGES</em></code>, both generated with functions listed in <a href="#M3" class="tlink">Chess Graph Generation</a>. For display reasons, nodes occupied by white/black pieces are colored in gray/black, unoccupied nodes as open circles. Edges originating from nodes occupied by white/black are colored in gray/black.</p>
+
+<p>Various optional arguments are available:
+<ul style="margin-top:-14px;">
+  <li>
+    <code>ShowNodeID</code>
+    <div class="i"><code>True/False</code>; displays the node ID in form of numbered nodes; note that this option only applies if  <code>NodeLayout->"Chessboard"</code><br>
+    default value: <code>ShowNodeID->False</code></li>
+  <li>
+    <code>GraphType</code>
+    <div class="i">defines which type of graph is generated
+    <ul style="list-style-type:none;">
+      <li><code>GraphType->"Color"</code> (default)
+        <div class="i">graph with <code>"Color"</code> edge/node states</div></li>
+      <li><code>GraphType->"Simple"</code>
+        <div class="i">simple graph with all nodes and edges displayed in one color (<code>"Simple"</code> edge/node states)</div></li>
+    </ul></div></li>
+  <li>
+    <code>NodeLayout</code>
+    <div class="i">defines the node layout of the generated graph
+    <ul style="list-style-type:none;">
+      <li><code>NodeLayout->"Chessboard"</code> (default)
+        <div class="i">nodes are arranged in a classical 8x8 chessboard layout, with arrows indicating directed edges between source and target nodes</div></li>
+      <li><code>NodeLayout->"LinearV"</code>
+        <div class="i">nodes are arranged in a linear vertical fashion; edges originating from nodes occupied by white/black pieces are colored
+        in gray/black; edges targeting nodes are drawn without arrows, as source is indicated by the edges' color</div></li>
+      <li><code>NodeLayout->"LinearH"</code>
+        <div class="i">nodes are arranged in a linear horizontal fashion; edges originating from nodes occupied by white/black pieces are colored
+        in gray/black; edges targeting nodes are drawn without arrows, as source is indicated by the edges' color</div></li>
+    </ul></div></li>
+  <li>
+    <code>EdgeLayout</code>
+    <div class="i">specifies the edge layout of the generated graph
+    <ul style="list-style-type:none;">
+      <li><code>EdgeLayout->"Automatic"</code> (default)
+        <div class="i"><em>Mathematica</em> chooses the arrangement and style of edges</div></li>
+      <li><code>EdgeLayout->"Chessboard"</code>
+        <div class="i">the height of arched edges indicates the chessboard distance between source and target node<br>
+        (this option only applies if <code>NodeLayout->"Linear"</code>)</div></li>
+    </ul></div></li>
+  <li>
+    <code>ShowFrame</code>
+    <div class="i"><code>True/False</code> for showing frame with tickmarks indicating the chessboard distance<br>
+    default value: <code>ShowFrame->False</code></div></li>
+</ul></p>
+
+<p><strong>EXAMPLE:</strong></p>
+
+<p>The code</p>
+
+<pre><code>Get["ChessY.m"];
+
+position = positionStart;
+nodes = getNodesFromPosition[position,State->"Color"];
+edges = getEdgesFromPosition[position,State->"Color"];
+
+g1 = showPositionalChessGraph[
+       nodes,edges,
+       NodeLayout->"Chessboard",EdgeLayout->"Automatic",ShowFrame->False
+     ];
+
+g2 = showPositionalChessGraph[
+       nodes,edges,
+       NodeLayout->"LinearV",EdgeLayout->"Chessboard",ShowFrame->True
+     ];
+
+Print[GraphicsGrid[{{g1,g2}}]];</code></pre>
+
+<p>generates and visualizes two positional chess graphs (8x8 and linear vertical node layout) associated with the initial chess position:
+<center><img src="mFig6.png" height="320px"></center></p>
+
+<p>The function</p>
+
+<pre><code>animateChessPositions[ <em>MOVES</em> , <em>POSITIONS</em> ]</code></pre>
+
+<p>returns a graphics displaying in an interactive fashion multiple chess positions, e.g. that of a chess game, given a list of moves and associated positions.</p>
+
+<p><strong>EXAMPLE:</strong></p>
+
+<p>The code</p>
+
+<pre><code><span class="c">(* load the ChessY toolbox *)</span>
+Get["ChessY.m"];
+
+<span class="c">(* open PGN record file *)</span>
+pgnfile = OpenRead["example2.pgn"];
+eof = False;
+
+<span class="c">(* setup list for handling data *)</span>
+game = Array[0,11];
+
+{
+  cEvent,cSite,cDate,cRound,cWhite,cBlack,cResult,cECO,cWhiteElo,cBlackElo,cMoves
+} = Table[i,{i,1,11}];
+
+<span class="c">(* parse PGN record *)</span>
+While[ !eof ,
+  If[
+    (record = Read[pgnfile,Record,RecordSeparators->{"\n"}])==EndOfFile ,
+    eof = True
+  ];
+
+  If[
+    (!eof) && (StringTake[record,7]=="[Event ") ,
+    game[[cEvent]] = StringSplit[record,"\""][[2]]
+  ];
+
+  If[
+    (!eof) && (StringTake[record,6]=="[Site ") ,
+    game[[cSite]] = StringSplit[record,"\""][[2]]
+  ];
+
+  If[
+    (!eof) && (StringTake[record,6]=="[Date ") ,
+    game[[cDate]] = StringSplit[record,"\""][[2]]
+  ];
+
+  If[
+    (!eof) && (StringTake[record,7]=="[Round ") ,
+    game[[cRound]] = StringSplit[record,"\""][[2]]
+  ];
+
+  If[
+    (!eof) && (StringTake[record,7]=="[White ") ,
+    game[[cWhite]] = StringSplit[record,"\""][[2]]
+  ];
+
+  If[
+    (!eof) && (StringTake[record,7]=="[Black ") ,
+    game[[cBlack]] = StringSplit[record,"\""][[2]]
+  ];
+
+  If[
+    (!eof) && (StringTake[record,8]=="[Result ") ,
+    game[[cResult]] = StringSplit[record,"\""][[2]]
+  ];
+
+  If[
+    (!eof) && (StringTake[record,5]=="[ECO ") ,
+    game[[cECO]] = StringSplit[record,"\""][[2]]
+  ];
+
+  If[
+    (!eof) && (StringTake[record,10]=="[WhiteElo ") ,
+    game[[cWhiteElo]] = StringSplit[record,"\""][[2]]
+  ];
+
+  If[
+    (!eof) && (StringTake[record,10]=="[BlackElo ") ,
+    game[[cBlackElo]] = StringSplit[record,"\""][[2]]
+  ];
+
+  If[
+    (!eof) && (StringTake[record,2]=="1.") ,
+    game[[cMoves]] = StringTrim[
+      StringSplit[record,RegularExpression["[0-9]+[\\.]"]]
+    ]
+  ];
+];
+
+<span class="c">(* close PGN record file *)</span>
+Close[pgnfile];
+
+<span class="c">(* get list of moves and positions *)</span>
+moves = game[[cMoves]];
+positions = getPositionsFromGamePGN[moves];
+
+<span class="c">(* animate chess game *)</span>
+Print[animateChessPositions[moves,positions]];</code></pre>
+
+<p>animates the game between Gundersen and Faul during the Pietzcker Christmas Tournament in 1928:
+<center><img src="mFig7.png" height="360px"></center></p>
+
+<p>Finally, the function</p>
+
+<pre><code>animatePositionalChessGraphs[ <em>NODES</em> , <em>EDGES</em> ]</code></pre>
+
+<p>returns a graphics displaying in an interactive fashion multiple positional chess graphs, given a list of nodes and edges associated with the
+positions of a chess game. The chess graphs displayed are the same to those generated by <code>showPositionalChessGraph[]</code>, thus the same optional arguments apply.</p>
+
+<p><strong>EXAMPLE:</strong></p>
+
+<p>The code</p>
+
+<pre><code><span class="c">(* load the ChessY toolbox *)</span>
+Get["ChessY.m"];
+
+<span class="c">(* open PGN record file *)</span>
+pgnfile = OpenRead["example2.pgn"];
+eof = False;
+
+<span class="c">(* setup list for handling data *)</span>
+game = Array[0,11];
+
+{
+  cEvent,cSite,cDate,cRound,cWhite,cBlack,cResult,cECO,cWhiteElo,cBlackElo,cMoves
+} = Table[i,{i,1,11}];
+
+<span class="c">(* parse PGN record *)</span>
+While[ !eof ,
+  If[
+    (record = Read[pgnfile,Record,RecordSeparators->{"\n"}])==EndOfFile ,
+    eof = True
+  ];
+
+  If[
+    (!eof) && (StringTake[record,7]=="[Event ") ,
+    game[[cEvent]] = StringSplit[record,"\""][[2]]
+  ];
+
+  If[
+    (!eof) && (StringTake[record,6]=="[Site ") ,
+    game[[cSite]] = StringSplit[record,"\""][[2]]
+  ];
+
+  If[
+    (!eof) && (StringTake[record,6]=="[Date ") ,
+    game[[cDate]] = StringSplit[record,"\""][[2]]
+  ];
+
+  If[
+    (!eof) && (StringTake[record,7]=="[Round ") ,
+    game[[cRound]] = StringSplit[record,"\""][[2]]
+  ];
+
+  If[
+    (!eof) && (StringTake[record,7]=="[White ") ,
+    game[[cWhite]] = StringSplit[record,"\""][[2]]
+  ];
+
+  If[
+    (!eof) && (StringTake[record,7]=="[Black ") ,
+    game[[cBlack]] = StringSplit[record,"\""][[2]]
+  ];
+
+  If[
+    (!eof) && (StringTake[record,8]=="[Result ") ,
+    game[[cResult]] = StringSplit[record,"\""][[2]]
+  ];
+
+  If[
+    (!eof) && (StringTake[record,5]=="[ECO ") ,
+    game[[cECO]] = StringSplit[record,"\""][[2]]
+  ];
+
+  If[
+    (!eof) && (StringTake[record,10]=="[WhiteElo ") ,
+    game[[cWhiteElo]] = StringSplit[record,"\""][[2]]
+  ];
+
+  If[
+    (!eof) && (StringTake[record,10]=="[BlackElo ") ,
+    game[[cBlackElo]] = StringSplit[record,"\""][[2]]
+  ];
+
+  If[
+    (!eof) && (StringTake[record,2]=="1.") ,
+    game[[cMoves]] = StringTrim[
+      StringSplit[record,RegularExpression["[0-9]+[\\.]"]]
+    ]
+  ];
+];
+
+<span class="c">(* close PGN record file *)</span>
+Close[pgnfile];
+
+<span class="c">(* get list of positions, nodes and edges *)</span>
+positions = getPositionsFromGamePGN[game[[cMoves]]];
+
+nodes = {};
+edges = {};
+
+For[
+  i=1,i<=Length[positions],i++,
+  nodes = Append[nodes,getNodesFromPosition[positions[[i]]]];
+  edges = Append[edges,getEdgesFromPosition[positions[[i]]]];
+];
+
+<span class="c">(* animate chess graph *)</span>
+Print[
+  animatePositionalChessGraphs[
+    nodes,edges,ShowNodeID->False,GraphType->"Color",NodeLayout->"Chessboard"
+  ]
+];</code></pre>
+
+<p>animates positional chess graphs associated with successive positions during the game between Gundersen and Faul during the Pietzcker Christmas Tournament in 1928:
+<center><img src="mFig8.png" height="360px"></center></p>
+
+<h4 id="M5">Chess Graph Analysis</h4>
+
+<p><em>ChessY</em> provides a baseline set of tools for analyzing positional chess graphs. However, with the knowledge of the data objects returned by <em>ChessY</em>, specifically position, node and edge lists, this set of tools can be easily extended utilizing the unlimited potential of Mathematica.</p>
+
+<pre><code>getNumberOfNodes[ <em>NODES</em> ]</code></pre>
+
+<p>returns a list containing the number of nodes of a chess graph in specified states, taking a 1-dimensional list of nodes as argument. Options are:
+<ul style="margin-top:-14px;">
+  <li>
+    <code>State</code>
+    <div class="i">specifies the node states to be counted
+    <ul style="list-style-type:none;">
+      <li><code>State->"Piece"</code> - state indicating individual type of chess pieces</li>
+      <li><code>State->"Color"</code> - state indicating color of chess pieces (default)</li>
+      <li><code>State->"Simple"</code> - state indicating whether node is occupied or not</li>
+    </ul></div></li>
+</ul></p>
+
+<p>Depending on the chosen option, this function returns
+<ul style="margin-top:-14px;">
+  <li>for <code>State->"Piece"</code>: <code>{#wP,#wN,#wB,#wR,#wQ,#wK,#bK,#bQ,#bR,#bB,#bN,#bP}</code></li>
+  <li>for <code>State->"Color"</code>: <code>{#white nodes,#black nodes}</code></li>
+  <li>for <code>State->"Simple"</code>: <code>#occupied nodes</code></li>
+</ul></p>
+
+<pre><code>getNumberOfEdges[ <em>EDGES</em> ]</code></pre>
+
+<p>returns the number of edges of a chess graph. Options are:
+<ul style="margin-top:-14px;">
+  <li>
+    <code>State</code>
+    <div class="i">specifies the edge state/weight
+    <ul style="list-style-type:none;">
+      <li><code>State->"Color"</code> - state indicating color of chess pieces on source node (default)</li>
+      <li><code>State->"Simple"</code> - state indicating whether source node is occupied or not</li>
+    </ul></div></li>
+</ul></p>
+
+<p>Depending on the chosen option, this function returns:
+<ul style="margin-top:-14px;">
+  <li>for <code>State->"Color"</code>: <code>{#edges (white source nodes),#edges (black source nodes)}</code></li>
+  <li>for <code>State->"Simple"</code>: <code>#edges</code></li>
+</ul></p>
+
+<pre><code>getAdjacencyMatrix[ <em>EDGES</em> ]</code></pre>
+
+<p>returns the adjacency matrices $a_{ij}$ of a chess graph. Options are:
+<ul style="margin-top:-14px;">
+  <li>
+    <code>State</code>
+    <div class="i">specifies the edge state/weight
+    <ul style="list-style-type:none;">
+      <li><code>State->"Color"</code> - state indicating color of chess pieces on source node (default)</li>
+      <li><code>State->"Simple"</code> - state indicating whether source node is occupied or not</li>
+    </ul></div></li>
+</ul></p>
+
+<p>Depending on the chosen option, this function returns:
+<ul style="margin-top:-14px;">
+  <li>for <code>State->"Color"</code>: weighted adjacency matrix</li>
+  <li>for <code>State->"Simple"</code>: relational adjacency matrix</li>
+</ul></p>
+
+<pre><code>getConnectedness[ <em>#EDGES</em> ]</code></pre>
+
+<p>returns the connectedness $\rho$ of a chess graph. If the argument is a list containing the number of edges originating from white and black nodes, the returned list contains the connectedness of the corresponding subgraphs, otherwise the total connectedness is returned.</p>
+
+<pre><code>getMobility[ <em>NODES</em> , <em>EDGES</em> ]</code></pre>
+
+<p>returns the mobility $\mathcal{M}$ of a chess graph. Options are:
+<ul style="margin-top:-14px;">
+  <li>
+    <code>State</code>
+    <div class="i">specifies the edge state/weight
+    <ul style="list-style-type:none;">
+      <li><code>State->"Color"</code> - state indicating color of chess pieces (default)</li>
+      <li><code>State->"Simple"</code> - state indicating whether node is occupied or not</li>
+    </ul></div></li>
+</ul></p>
+
+<p>Depending on the chosen option, this function returns:
+<ul style="margin-top:-14px;">
+  <li>for <code>State->"Color"</code>: list with $\mathcal{M}$ of white and black nodes</li>
+  <li>for <code>State->"Simple"</code>: total $\mathcal{M}$</li>
+</ul></p>
+
+<pre><code>getControl[ <em>NODES</em> , <em>EDGES</em> ]</code></pre>
+
+<p>returns the control $\mathcal{C}$ of a chess graph. Options are:
+<ul style="margin-top:-14px;">
+  <li>
+    <code>State</code>
+    <div class="i">specifies the edge state/weight
+    <ul style="list-style-type:none;">
+      <li><code>State->"Color"</code> - state indicating color of chess pieces (default)</li>
+      <li><code>State->"Simple"</code> - state indicating whether node is occupied or not</li>
+    </ul></div></li>
+</ul></p>
+
+<p>Depending on the chosen option, this function returns:
+<ul style="margin-top:-14px;">
+  <li>for <code>State->"Color"</code>: list with $\mathcal{C}$ of white and black nodes</li>
+  <li>for <code>State->"Simple"</code>: total $\mathcal{C}$</li>
+</ul></p>
+
+<pre><code>getDominance[ <em>NODES</em> , <em>EDGES</em> ]</code></pre>
+
+<p>returns the dominance $\mathcal{D}$ of a chess graph. Options are:
+<ul style="margin-top:-14px;">
+  <li>
+    <code>State</code>
+    <div class="i">specifies the edge state/weight
+    <ul style="list-style-type:none;">
+      <li><code>State->"Color"</code> - state indicating color of chess pieces (default)</li>
+      <li><code>State->"Simple"</code> - state indicating whether node is occupied or not</li>
+    </ul></div></li>
+</ul></p>
+
+<p>Depending on the chosen option, this function returns:
+<ul style="margin-top:-14px;">
+  <li>for <code>State->"Color"</code>: list with $\mathcal{D}$ of white and black nodes</li>
+  <li>for <code>State->"Simple"</code>: total $\mathcal{D}$</li>
+</ul></p>
+
+<pre><code>getAverageNodeReach[ <em>NODES</em> , <em>EDGES</em> ]</code></pre>
+
+<p>returns the dominance $\mathcal{R}$ of a chess graph. Options are:
+<ul style="margin-top:-14px;">
+  <li>
+    <code>State</code>
+    <div class="i">specifies the edge state/weight
+    <ul style="list-style-type:none;">
+      <li><code>State->"Color"</code> - state indicating color of chess pieces (default)</li>
+      <li><code>State->"Simple"</code> - state indicating whether node is occupied or not</li>
+    </ul></div></li>
+</ul></p>
+
+<p>Depending on the chosen option, this function returns:
+<ul style="margin-top:-14px;">
+  <li>for <code>State->"Color"</code>: list with $\mathcal{R}$ of white and black nodes</li>
+  <li>for <code>State->"Simple"</code>: total $\mathcal{R}$</li>
+</ul></p>
+
+<pre><code>getOffensiveness[ <em>NODES</em> , <em>EDGES</em> ]</code></pre>
+
+<p>returns the offensiveness $O$ of a chess graph. Options are:
+<ul style="margin-top:-14px;">
+  <li>
+    <code>State</code>
+    <div class="i">specifies the edge state/weight
+    <ul style="list-style-type:none;">
+      <li><code>State->"Color"</code> - state indicating color of chess pieces (default)</li>
+      <li><code>State->"Simple"</code> - state indicating whether node is occupied or not</li>
+    </ul></div></li>
+</ul></p>
+
+<p>Depending on the chosen option, this function returns:
+<ul style="margin-top:-14px;">
+  <li>for <code>State->"Color"</code>: list with $O$ of white and black nodes</li>
+  <li>for <code>State->"Simple"</code>: total $O$</li>
+</ul></p>
+
+<pre><code>getDefensiveness[ <em>NODES</em> , <em>POSITION</em> ]</code></pre>
+
+<p>returns the defensiveness $D$ associated with a chess position. Options are:
+<ul style="margin-top:-14px;">
+  <li>
+    <code>State</code>
+    <div class="i">specifies the edge state/weight
+    <ul style="list-style-type:none;">
+      <li><code>State->"Color"</code> - state indicating color of chess pieces (default)</li>
+      <li><code>State->"Simple"</code> - state indicating whether node is occupied or not</li>
+    </ul></div></li>
+</ul></p>
+
+<p>Depending on the chosen option, this function returns:
+<ul style="margin-top:-14px;">
+  <li>for <code>State->"Color"</code>: list with $D$ of white and black nodes</li>
+  <li>for <code>State->"Simple"</code>: total $D$</li>
+</ul></p>
+
+<p><strong>EXAMPLE:</strong></p>
+
+<p>The code</p>
+
+<pre><code><span class="c">(* load the ChessY toolbox *)</span>
+Get["ChessY.m"];
+
+<span class="c">(* generate position *)</span>
+position = position23SpasskyFischer1972;
+
+<span class="c">(* get list of nodes and edges *)</span>
+nodes = getNodesFromPosition[position,State->"Color"];
+edges = getEdgesFromPosition[position,State->"Color"];
+
+<span class="c">(* display positional chess graph *)</span>
+Print[
+  showPositionalChessGraph[
+    nodes,edges,ShowNodeID->False,GraphType->"Color",NodeLayout->"Chessboard"
+  ]
+];
+
+<span class="c">(* analyze chess graph *)</span>
+aij = getAdjacencyMatrix[edges,State->"Color"];
+nn = getNumberOfNodes[nodes,State->"Color"];
+ne = getNumberOfEdges[edges,State->"Color"];
+co = getConnectedness[ne];
+m = getMobility[nodes,edges,State->"Color"];
+c = getControl[nodes,edges,State->"Color"];
+do = getDominance[nodes,edges,State->"Simple"];
+r = getAverageNodeReach[nodes,edges,State->"Color"];
+o = getOffensiveness[nodes,edges,State->"Color"];
+d = getDefensiveness[nodes,position,State->"Simple"];
+
+<span class="c">(* print results *)</span>
+Print["number of nodes = ",nn];
+Print["number of edges = ",ne];
+Print["connectedness = ",co];
+Print["mobility = ",m];
+Print["control = ",c];
+Print["dominance = ",do];
+Print["average node reach = ",r];
+Print["offensiveness = ",o];
+Print["defensiveness = ",d];</code></pre>
+
+<p>generates the output:
+<center><img src="mFig9.png" width="80%"></center></p>
+
+<h4 id="M6">Examples</h4>
+
+<br>
+
+<h5 id="M6.1" class="u">Analysis of a Chess Game</h5>
+
+<p>Input:</p>
+
+<pre><code><span class="c">(* load the ChessY toolbox *)</span>
+Get["ChessY.m"];
+
+<span class="c">(* open PGN record file *)</span>
+pgnfile = OpenRead["example3.pgn"];
+eof = False;
+
+<span class="c">(* setup list for handling data *)</span>
+game = Array[0,11];
+
+{
+  cEvent,cSite,cDate,cRound,cWhite,cBlack,cResult,cECO,cWhiteElo,cBlackElo,cMoves
+} = Table[i,{i,1,11}];
+
+<span class="c">(* parse PGN record *)</span>
+While[ !eof ,
+  If[
+    (record = Read[pgnfile,Record,RecordSeparators->{"\n"}])==EndOfFile ,
+    eof = True
+  ];
+
+  If[
+    (!eof) && (StringTake[record,7]=="[Event ") ,
+    game[[cEvent]] = StringSplit[record,"\""][[2]]
+  ];
+
+  If[
+    (!eof) && (StringTake[record,6]=="[Site ") ,
+    game[[cSite]] = StringSplit[record,"\""][[2]]
+  ];
+
+  If[
+    (!eof) && (StringTake[record,6]=="[Date ") ,
+    game[[cDate]] = StringSplit[record,"\""][[2]]
+  ];
+
+  If[
+    (!eof) && (StringTake[record,7]=="[Round ") ,
+    game[[cRound]] = StringSplit[record,"\""][[2]]
+  ];
+
+  If[
+    (!eof) && (StringTake[record,7]=="[White ") ,
+    game[[cWhite]] = StringSplit[record,"\""][[2]]
+  ];
+
+  If[
+    (!eof) && (StringTake[record,7]=="[Black ") ,
+    game[[cBlack]] = StringSplit[record,"\""][[2]]
+  ];
+
+  If[
+    (!eof) && (StringTake[record,8]=="[Result ") ,
+    game[[cResult]] = StringSplit[record,"\""][[2]]
+  ];
+
+  If[
+    (!eof) && (StringTake[record,5]=="[ECO ") ,
+    game[[cECO]] = StringSplit[record,"\""][[2]]
+  ];
+
+  If[
+    (!eof) && (StringTake[record,10]=="[WhiteElo ") ,
+    game[[cWhiteElo]] = StringSplit[record,"\""][[2]]
+  ];
+
+  If[
+    (!eof) && (StringTake[record,10]=="[BlackElo ") ,
+    game[[cBlackElo]] = StringSplit[record,"\""][[2]]
+  ];
+
+  If[
+    (!eof) && (StringTake[record,2]=="1.") ,
+    game[[cMoves]] = StringTrim[
+      StringSplit[record,RegularExpression["[0-9]+[\\.]"]]
+    ]
+  ];
+];
+
+<span class="c">(* close PGN record file *)</span>
+Close[pgnfile];
+
+<span class="c">(* get list of game positions from moves *)</span>
+positions = getPositionsFromGamePGN[game[[cMoves]]];
+
+<span class="c">(* print result *)</span>
+Print[
+  Panel[
+    Text[
+      Grid[
+        {
+          {
+            Style["Event \t",Black,Bold,FontFamily->"Arial",FontSize->12 ],
+            Style[game[[cEvent]],Black,FontFamily->"Arial",FontSize->12 ]
+          },
+          {
+            Style["Site \t",Black,Bold,FontFamily->"Arial",FontSize->12 ],
+            Style[game[[cSite]],Black,FontFamily->"Arial",FontSize->12 ]
+          },
+          {
+            Style["Date \t",Black,Bold,FontFamily->"Arial",FontSize->12 ],
+            Style[game[[cDate]],Black,FontFamily->"Arial",FontSize->12 ]
+          },
+          {
+            Style["Round \t",Black,Bold,FontFamily->"Arial",FontSize->12 ],
+            Style[game[[cRound]],Black,FontFamily->"Arial",FontSize->12 ]
+          },
+          {
+            Style["White \t",Black,Bold,FontFamily->"Arial",FontSize->12 ],
+            Style[game[[cWhite]],Black,FontFamily->"Arial",FontSize->12 ]
+          },
+          {
+            Style["Black \t",Black,Bold,FontFamily->"Arial",FontSize->12 ],
+            Style[game[[cBlack]],Black,FontFamily->"Arial",FontSize->12 ]
+          },
+          {
+            Style["Result \t",Black,Bold,FontFamily->"Arial",FontSize->12 ],
+            Style[game[[cResult]],Black,FontFamily->"Arial",FontSize->12 ]
+          }
+        }
+      ]
+    ] , FrameMargins->{{30, 30}, {10, 10}}
+  ]
+];
+
+<span class="c">(* get list of moves, positions, nodes and edges *)</span>
+moves = game[[cMoves]];
+positions = getPositionsFromGamePGN[ moves ];
+
+nodes = {};
+edges = {};
+
+For[
+  i=1,i<=Length[positions],i++,
+  nodes = Append[nodes,getNodesFromPosition[positions[[i]]]];
+  edges = Append[edges,getEdgesFromPosition[positions[[i]]]];
+];
+
+<span class="c">(* analyse all positions of game *)</span>
+nn = {};
+ne = {};
+co = {};
+m = {};
+c = {};
+do = {};
+r = {};
+o = {};
+d = {};
+
+For[
+  i=1,i<=Length[positions],i++,
+  nn = Append[nn,getNumberOfNodes[nodes[[i]],State->"Color"]];
+  ne = Append[ne,getNumberOfEdges[edges[[i]],State->"Color"]];
+  co = Append[co,getConnectedness[ne[[i]]]];
+  m = Append[m,getMobility[nodes[[i]],edges[[i]],State->"Color"]];
+  c = Append[c,getControl[nodes[[i]],edges[[i]],State->"Color"]];
+  do = Append[do,getDominance[nodes[[i]],edges[[i]],State->"Color"]];
+  r = Append[r,getAverageNodeReach[nodes[[i]],edges[[i]],State->"Color"]];
+  o = Append[o,getOffensiveness[nodes[[i]],edges[[i]],State->"Color"]];
+  d = Append[d,getDefensiveness[nodes[[i]],positions[[i]],State->"Color"]];
+];
+
+<span class="c">(* display some of the results *)</span>
+
+g1 = ListPlot[
+  Transpose[MapIndexed[{{First@#2,#1[[1]]},{First@#2,#1[[2]]}} &, nn]],
+  PlotRange->All,
+  Joined->True,
+  PlotLabel->"number of nodes,
+  PlotLegends->{"White","Black"},
+  PlotStyle->{GrayLevel[0.7],Black}
+];
+
+g2 = ListPlot[
+  Transpose[MapIndexed[{{First@#2,#1[[1]]},{First@#2,#1[[2]]}} &, co]],
+  PlotRange->All,
+  Joined->True,
+  PlotLabel->"connectedness",
+  PlotLegends->{"White","Black"},
+  PlotStyle->{GrayLevel[0.7],Black}
+];
+
+g3 = ListPlot[
+  Transpose[MapIndexed[{{First@#2,#1[[1]]},{First@#2,#1[[2]]}} &, c]],
+  PlotRange->All,
+  Joined->True,
+  PlotLabel->"control",
+  PlotLegends->{"White","Black"},
+  PlotStyle->{GrayLevel[0.7],Black}
+];
+
+g4 = ListPlot[
+  Transpose[MapIndexed[{{First@#2,#1[[1]]},{First@#2,#1[[2]]}} &, o]],
+  PlotRange->All,
+  Joined->True,
+  PlotLabel->"offensiveness",
+  PlotLegends->{"White","Black"},
+  PlotStyle->{GrayLevel[0.7],Black}
+];
+
+Print[GraphicsGrid[{{g1,g2},{g3,g4}}]];</code></pre>
+
+<p>Output:
+<center><img src="mFig10.png" width="100%"></center></p>
+
+</main>
+
+</div><!-- wrapper -->
+
+<!-- footer =========================================================================================== -->
+
+<footer>
+
+  <div id="copyright" w3-include-html="../../../copyright.txt"></div><script>w3.includeHTML();</script>
+
+</footer>
+
+</body>
+</html>
