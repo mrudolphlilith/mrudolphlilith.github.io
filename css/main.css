@@ -381,7 +381,7 @@ footer {
 #fields {
     vertical-align: top;
     font-size: 12px;
-    color: #c0c0c0;
+    color: #b0b0b0;
     padding-top: 5px;
 }
 
@@ -400,7 +400,7 @@ footer {
 }
 
 #navlist li a {
-    font-size: 14px;
+    font-size: 16px;
     color: #b0b0b0;
 }
 
@@ -460,13 +460,14 @@ footer #copyright {
 
 .pub_title {
     margin-left: 40px;
-    margin-bottom: 5px;
+    margin-bottom: 2px; 
     font-weight: bold;
     text-align: left;
 }
 
 .pub_authors {
     margin-left: 40px;
+    margin-bottom: 2px; 
     text-align: left;
 }
 
